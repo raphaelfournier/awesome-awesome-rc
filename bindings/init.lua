@@ -1,4 +1,5 @@
 return {
+   apps = require'bindings.apps',
    client = {
       key = require'bindings.client.key',
       mouse = require'bindings.client.mouse',

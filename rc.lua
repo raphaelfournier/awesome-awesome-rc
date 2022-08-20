@@ -3,16 +3,28 @@
 -- load luarocks if installed
 pcall(require, 'luarocks.loader')
 
+-- home variable
+home_var        = os.getenv("HOME")
+
+-- user preferences
+terminal    = "alacritty"
+editor      = "vim"
+editor_cmd  = terminal .. " -e " .. editor
+web         = "firefox"
+files       = "thunar"
+username = os.getenv("USER"):gsub("^%l", string.upper)
+
+-- load modules
+require("modules")
+
 -- load theme
-local beautiful = require'beautiful'
-local gears = require'gears'
-beautiful.init(gears.filesystem.get_themes_dir() .. 'default/theme.lua')
+require("theme")
 
 -- load key and mouse bindings
-require'bindings'
+require("bindings")
 
 -- load rules
-require'rules'
+require("rules")
 
 -- load signals
-require'signals'
+require("signals")

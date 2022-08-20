@@ -1,0 +1,9 @@
+- wallpapers
+- demoMode
+- blockOnTag
+- backup/commit du dépôt
+- centre de contrôle
+- promptbox ?
+- les fonctions copy_tag de config/tags.lua devraient probablement être mises dans
+_M, et réutilisée avec un préfixe dans la table des bindings
+- conflit sur un keybinding de < (find-cursor et change layout)
