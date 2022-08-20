@@ -25,7 +25,7 @@ local NEXT_MPD_CMD = "mpc next"
 local MPDCLIENT_CMD = "sonata"
 
 --local PATH_TO_ICONS = "/usr/share/icons/Arc/actions/24/player_"
-local PATH_TO_ICONS = "/home/raph/.config/awesome/themes/myzenburn/"
+local PATH_TO_ICONS = "/home/raph/.config/awesome/theme/myzenburn/"
 
 local PAUSE_ICON_NAME = PATH_TO_ICONS .. "pause.png"
 local PLAY_ICON_NAME = PATH_TO_ICONS .. "play.png"

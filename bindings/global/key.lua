@@ -8,6 +8,8 @@ local mod = require'bindings.mod'
 local widgets = require'widgets'
 local bling = require('modules.bling')
 
+local sidebar = require('modules.sidebar')
+
 menubar.utils.terminal = apps.terminal
 
 local function tag_view_nonempty(step, s)
@@ -76,13 +78,13 @@ awful.keyboard.append_global_keybindings{
       group       = 'awesome',
       on_press    = awesome.restart,
    },
-   --awful.key{
-      --modifiers   = {mod.super, mod.shift},
-      --key         = 'q',
-      --description = 'quit awesome',
-      --group       = 'awesome',
-      --on_press    = awesome.quit,
-   --},
+   awful.key{
+      modifiers   = {mod.super},
+      key         = 's',
+      description = 'sidebar',
+      group       = 'awesome',
+      on_press    = function() sidebar.toggle() end
+   },
    --awful.key{
       --modifiers   = {mod.super, mod.shift},
       --key         = 'r',

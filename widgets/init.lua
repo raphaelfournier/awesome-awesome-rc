@@ -372,23 +372,13 @@ function _M.create_wibox(s)
             layout = wibox.layout.fixed.horizontal,
             _M.launcher,
             s.layoutbox,
-            _M.demoMode_widget,
+            demoMode_widget,
             s.promptbox,
             s.taglist,
          },
          -- middle widgets
          s.tasklist,
          -- right widgets
-         --{
-            --layout = wibox.layout.fixed.horizontal,
-            --_M.keyboardlayout,
-            --_M.demoMode_widget,
-            --mpdarc_widget,
-            --volumearc_widget,
-            --batteryarc_widget,
-            --_M.textclock,
-            --wibox.widget.systray(),
-         --}
 			{ 
         layout = wibox.layout.fixed.horizontal,
         spacing       = 2,
@@ -397,7 +387,6 @@ function _M.create_wibox(s)
             wibox.widget {
               smallspace,
               mpdarc_widget,
-            demoMode_widget,
               volumearc_widget,
               batteryarc_widget,
               smallspace,

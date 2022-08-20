@@ -12,7 +12,7 @@ _M.layouts = {
 
 awful.tag.add("work", {
     icon = beautiful.tag_icon_term,
-    layout             = awful.layout.suit.tile,
+    layout             = awful.layout.suit.max,
     master_width_factor = 0.6,
     --gap_single_client  = true,
     --gap                = 15,

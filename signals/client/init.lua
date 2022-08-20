@@ -1,4 +1,5 @@
 local awful = require'awful'
+local naughty = require'naughty'
 local beautiful = require'beautiful'
 require'awful.autofocus'
 local wibox = require'wibox'

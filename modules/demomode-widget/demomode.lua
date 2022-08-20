@@ -17,7 +17,7 @@ local gears         = require("gears")
 local XSCREENSAVER_DEACTIVATE_COMMAND = "xdotool mousemove_relative 1 1 restore"
 local STRETCHLY_DEACTIVATE_COMMAND = "stretchly reset"
 local XSCREENSAVER_TIMER = 19
-local iconpath = "/home/raph/.config/awesome/themes/myzenburn/demomode.png"
+local iconpath = "/home/raph/.config/awesome/theme/myzenburn/demomode.png"
 
 local mytimer = gears.timer {
     timeout   = XSCREENSAVER_TIMER,
@@ -69,6 +69,5 @@ demoMode_widget:buttons(
     end)
   )
 )
-
 
 return demoMode_widget
